@@ -1,0 +1,183 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    width: 20%;
+    background-color: #121212;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.img {
+    align-items: flex-start;
+    height: 10px;
+    width: 10px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #3897f0;
+}
+
+
+/* Main Content */
+
+.content {
+    margin-left: 22%;
+    width: 75%;
+    padding: 20px;
+}
+
+
+/* Profile Section */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f58529;
+}
+
+.profile-details {
+    margin-left: 20px;
+}
+
+.profile-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 14px;
+    color: #999;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.profile-stats p {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.profile-stats p strong {
+    font-size: 20px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.highlight {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* Post Feed */
+
+.post-feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Responsive for smaller screens */
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 15%;
+    }
+    .content {
+        margin-left: 17%;
+        width: 80%;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    .highlight {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.heading.h3 {
+    text-align: center;
+    font-family: "times new roman";
+}
